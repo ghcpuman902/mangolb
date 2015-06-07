@@ -2,6 +2,8 @@
 
 Hi there!
 
+Thanks for downloading this from [<i class="fa fa-github"></i> GitHub](https://github.com/ghcpuman902/mangolb)!
+
 Start modify this blog system to suit your own need by reading [this](./?title=how-to-use-this-blog-system) article.
 
 --------------------------------------

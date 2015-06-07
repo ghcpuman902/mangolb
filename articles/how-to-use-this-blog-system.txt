@@ -315,9 +315,9 @@ Here are some more text which has nothing to do with the blue box.
 
 is not what you want to see is it? 
 
-On mobile it will look fine because on mobile all images will be 100% wide, but on desktop or larger screens the title of next section will appear at the right of the image. Keep this in mind and be careful when putting images as float left or right. Use Photoshop to add white margin at the left and right of the image and use `.middle` instead when necessary. 
+On mobile it will look fine because on mobile all images will be 100% wide, but on desktop or larger screens the title of next section will appear at the right of the image. Keep this in mind and be careful when putting images as float left or right. Use Photoshop to add white margin at the left and right side of the image and use `.middle` instead when necessary. 
 
-#### Loooooooooooong things
+#### Long things
 
 These things won't fold on small screen hence it is better to keep their length short or use other way of displaying them instead.
 
