@@ -106,9 +106,9 @@
 			transition: all 200ms cubic-bezier(.4,0,.2,1);
 		}
 		img:hover{
-			-webkit-box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
-			-moz-box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
-			box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
+			-webkit-box-shadow: 0px 4px 18px 4px rgba(0,0,0,0.2);
+			-moz-box-shadow: 0px 4px 18px 4px rgba(0,0,0,0.2);
+			box-shadow: 0px 4px 18px 4px rgba(0,0,0,0.2);
 		}
 
 		@media (min-width: 750px) {
