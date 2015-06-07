@@ -2,25 +2,11 @@
 
 Hi there! Welcome to my Blog!
 
---------------------------------------
-
-### Thanks
-
-**[Markdown](http://daringfireball.net/)** and **[LaTex](http://www.latex-project.org/)** for standardise the syntax I used to write everything.
-
-**[PHP Markdown & Extra](http://michelf.ca/)** for formatting Markdown.
-
-**[MathType](http://www.dessci.com/en/products/mathtype/)** software for generating LaTeX equations, and **[MathJax](http://www.mathjax.org/)** for formatting LaTeX equations.
-
-**[SlabText](http://freqdec.github.io/slabText/)** is generating the beautiful, full-size tittle you see above.
-
-**[highlight](https://highlightjs.org/)** is giving codes colours.
-
-Thanks **[Skeleton](http://getskeleton.com/)** for the beautiful style-sheet.
+Start modify this blog system to suit your own need by reading [this](./?title=how-to-use-this-blog-system) article.
 
 --------------------------------------
 
-### Posts:
+## Posts:
 
 \*Click on table heads to sort table
 
@@ -31,6 +17,22 @@ Thanks **[Skeleton](http://getskeleton.com/)** for the beautiful style-sheet.
 |[Kitchen Sink](./?title=kitchen-sink)                                                    |19/05/2015  |19/05/2015   |Demo                       |
 </div>
 
+
+--------------------------------------
+
+## Thanks
+
+**[Markdown](http://daringfireball.net/)** and **[LaTex](http://www.latex-project.org/)** for standardising the syntax I used to write everything.
+
+**[PHP Markdown & Extra](http://michelf.ca/)** for the PHP class I use to convert Markdown to HTML.
+
+**[MathType](http://www.dessci.com/en/products/mathtype/)** software for generating LaTeX equations, and **[MathJax](http://www.mathjax.org/)** for formatting LaTeX equations.
+
+**[SlabText](http://freqdec.github.io/slabText/)** is generating the beautiful, full-size title you see above.
+
+**[highlight](https://highlightjs.org/)** is giving codes colours.
+
+And finally thanks **[Skeleton](http://getskeleton.com/)** for the beautiful style-sheet.
 
 
 
