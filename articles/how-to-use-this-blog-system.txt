@@ -39,7 +39,7 @@ Each articles are formed of a `.txt` file and a folder which has the same name a
 
 I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. `default.txt` and the folder `default/` are for the index page.
 
-#### If you DON'T HAVE access to .htaccess file of your server 
+### If you *don't have* access to .htaccess file of your server 
 
 You'll need to use GET method to tell the php script which article you want.
 
@@ -51,7 +51,7 @@ Google "HTTP GET method" or click [here](http://www.w3schools.com/tags/ref_httpm
 
 Hence *http://yourdomain.com/mangolb/* is the same as *http://yourdomain.com/mangolb/?title=default*
 
-#### If you HAVE access to .htaccess file of your server
+### If you *have* access to .htaccess file of your server
 
 Because GET method is the default option, in order to change to this method it takes a bit of work. But it makes your blog links look better.
 
@@ -63,7 +63,7 @@ instead of
 
 > *http://yourdomain.com/mangolb/?title=YOUR-ARTICLE-TITLE*
 
-##### Step 1
+#### Step 1
 
 Copy and paste this code into your `.htaccess` file:
 
@@ -83,11 +83,11 @@ If you don't have a `.htaccess` file under your root folder, create one. You mig
 
 If you are not putting the `mangolb/` folder under your root folder, you might want to change the path in the `.htaccess` file.
 
-##### Step 2
+#### Step 2
 
 Find `index.php`, open it with a code-editor (something like [Sublime Text](http://www.sublimetext.com/)), then find "@.htaccess". Follow the instructions of the comments that are below "@.htaccess" (comment SECTION A and uncomment SECTION B, both sections are within 30 lines from "@.htaccess"). 
 
-##### Step 3
+#### Step 3
 
 Change all the links in `default.txt` as well as other `.txt` files from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
 
@@ -95,7 +95,7 @@ Change all the links in `default.txt` as well as other `.txt` files from "./?tit
 
 ## Start a new article
 
-##### Step 1: Give your new article a name
+### Step 1: Give your new article a name
 
 You need have two titles, one is for the name of your `.txt` file, another is your display title.
 
@@ -133,7 +133,7 @@ Your new `.txt` file should look like this by now :
 # This is a wonderful story about Apple, Banana & Orange
 ```
 
-##### Step 2: Give your article a cover picture
+### Step 2: Give your article a cover picture
 
 I suggest you use a cover picture that does not have much bright area in it to provide a good contrast for the white title. Especially on IE, when the text-shadow is not supported. The subject of the picture should be at the centre of the image. I'm using `background-size: cover;` in css to control the size of my background image. A good explanation of how it works can be find on [here](http://blog.vjeux.com/2013/image/css-container-and-cover.html).
 
@@ -148,7 +148,7 @@ Save it as `cover.jpg` under the folder.
 |   | + this-is-a-wonderful-story-about-apple-banana-and-orange.txt
 ```
 
-##### Step 3: Provide the author name and date written
+### Step 3: Provide the author name and date written
 
 When giving the Author Name and Date Written, do this: 
 
@@ -183,7 +183,7 @@ The line is not essential but it does make your article looks better.
 
 ![code and output](./articles/how-to-use-this-blog-system/code_and_output.jpg) {.middle}
 
-##### Step 4: Start writing using Markdown and LaTeX! 
+### Step 4: Start writing using Markdown and LaTeX! 
 
 If you are not familiar with Markdown, [this](http://markdowntutorial.com/) is a really really good tutorial about Markdown made by GitHub. However, some extra feature is added from the original Markdown documentation. Read more about the extra feature [here](https://michelf.ca/projects/php-markdown/extra/).
 
@@ -200,14 +200,14 @@ I'm using [MathType](http://www.dessci.com/en/products/mathtype/) on my Mac to g
 
 ![MathType](./articles/how-to-use-this-blog-system/mathtype.jpg){.middle}
 
-##### Step 5: Add the link to default.txt
+### Step 5: Add the link to default.txt
 
 If you have finished writing and you decided to publish it, you simply add the link of this article to the table in `default.txt`.
 
 
 ## Things to be careful about
 
-#### Reserved Characters
+### Reserved Characters
 
 Another thing is to be careful about reserved characters...
 
@@ -259,7 +259,7 @@ If they are not appearing or appearing not in the way you are expecting, try to 
 
 Oh, and also the tab key. It's for block code. Use spaces instead.
 
-#### Pictures
+### Pictures
 
 You can insert a full width image by using the syntax
 
@@ -317,7 +317,7 @@ is not what you want to see is it?
 
 On mobile it will look fine because on mobile all images will be 100% wide, but on desktop or larger screens the title of next section will appear at the right of the image. Keep this in mind and be careful when putting images as float left or right. Use Photoshop to add white margin at the left and right side of the image and use `.middle` instead when necessary. 
 
-#### Long things
+### Long things
 
 These things won't fold on small screen hence it is better to keep their length short or use other way of displaying them instead.
 
@@ -377,4 +377,4 @@ The 9x9 table you see above, for example, has code :
 
 ## THE END
 
-If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on GitHub and make any commits.
+If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on [<i class="fa fa-github"></i> GitHub](https://github.com/ghcpuman902/mangolb) and make any commits.

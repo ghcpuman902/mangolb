@@ -47,7 +47,7 @@
   ?></title>
 	<meta name="author" content="MangleKuo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600,800" rel="stylesheet" type="text/css">
 	<!-- change the number after v if browser is not reloading -->
 	<link rel="stylesheet" href="css/normalize.css?v=1">
 	<link rel="stylesheet" href="css/skeleton.css?v=1">
@@ -66,7 +66,7 @@
 			$my_html = preg_replace('/<a href="#" title="" id="author" class="itemprop">(.+?)<\/a>/is', '<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">$1</span></span>', $my_html);
 			$my_html = preg_replace('/<a href="#" title="" id="datePublished" class="itemprop">(.+?)<\/a>/is', '<span itemprop="datePublished" content="$1" markdown="1">$1</span>', $my_html);
 		}else{
-			$my_html = "<h1>Not Found</h1><h2>Blog-404 Not Found</h2><p>Go <a href='' onclick='window.history.back()'>back</a> or see <a href='./blog/'>full list of posts</a></p>";
+			$my_html = "<h1>Not Found</h1><h2>Blog-404 Not Found</h2><p>Go <a href='' onclick='window.history.back()'>back</a> or see <a href='./mangolb/'>full list of posts</a></p>";
 			$title = "404";
 		}
 	?>
@@ -90,7 +90,92 @@
 			'Lantinghei SC', 'Hiragino Sans GB', PingHei, 微软正黑体, 'Segoe UI Webfont', 'Microsoft YaHei', 'Heiti SC', Arial, sans-serif,
             'Lantinghei TC', 'Hiragino Kaku Gothic Pro', 微軟正黑體, 'STHeiti Light', 'Microsoft JhengHei', 'Heiti TC';
             font-weight: 600;
-			margin-top: 1.2em;
+		}
+
+		h2{
+			background-color: #F6F6F6;
+			margin-top: 1.25em;
+			font-weight: 800
+		}
+		h2:after{
+			content: " ";
+			display: block;
+			position: relative;
+			left: 100%;
+			top: 50%;
+			width: 4px;
+			height: 1.25em;
+			margin-left: -4px;
+			margin-top: -1.25em;
+			background-color: #E06965;
+		}
+
+		h3{
+			background-color: #F6F6F6;
+			margin-top: 1.3em;
+		}
+		h3:after{
+			content: " ";
+			display: block;
+			position: relative;
+			left: 100%;
+			top: 50%;
+			width: 4px;
+			height: 1.3em;
+			margin-left: -4px;
+			margin-top: -1.3em;
+			background-color: #FFD473;
+		}
+
+		h4{
+			background-color: #F6F6F6;
+			margin-top: 1.35em;
+		}
+		h4:after{
+			content: " ";
+			display: block;
+			position: relative;
+			left: 100%;
+			top: 50%;
+			width: 4px;
+			height: 1.35em;
+			margin-left: -4px;
+			margin-top: -1.35em;
+			background-color: #AEFF73;
+		}
+
+		h5{
+			background-color: #F6F6F6;
+			margin-top: 1.5em;
+		}
+		h5:after{
+			content: " ";
+			display: block;
+			position: relative;
+			left: 100%;
+			top: 50%;
+			width: 4px;
+			height: 1.5em;
+			margin-left: -4px;
+			margin-top: -1.5em;
+			background-color: #73DEFF;
+		}
+
+		h6{
+			background-color: #F6F6F6;
+			margin-top: 1.6em;
+		}
+		h6:after{
+			content: " ";
+			display: block;
+			position: relative;
+			left: 100%;
+			top: 50%;
+			width: 4px;
+			height: 1.6em;
+			margin-left: -4px;
+			margin-top: -1.6em;
+			background-color: #A168E7;
 		}
 
 		img{
@@ -268,6 +353,22 @@
 
 		}
 
+		.scrollToTop{
+			height: 40px;
+			width: 80px;
+			background-color: #000;
+			background-color: rgba(0,0,0,0.2);
+			color: #FFF;
+			text-align: center;
+			line-height: 40px;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+		}
+		.scrollToTop > a{
+			color: #FFF;
+		}
+
 		/*@SlabText*/
 		/* These styles will only be apply after the javascript. It's different from the .slab class. */
         /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.txt */
@@ -347,41 +448,42 @@
 	
 	</head>
 <body>
-<div class="se-pre-con"></div>
+	<div class="se-pre-con"></div>
   	<?php
 
   		if($title != "default"){
   			echo '<span itemscope itemtype="http://schema.org/Article" id="itemscope_wrapper">';
   		}
   	?>
-		<div id="cover">
-		  <div class="container">
-		    <div class="row" id="cover-texts">
+	<div id="cover">
+	  <div class="container">
+	    <div class="row" id="cover-texts">
 
-		    </div>
-		  </div>
-		</div>
+	    </div>
+	  </div>
+	</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="twelve columns" style="margin-top: 20px;">
-				  	<?php
-				  		if($title != "default"){
-				  			echo '<span itemprop="articleBody" markdown="1">';
-				  		} 
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 20px;">
+			  	<?php
+			  		if($title != "default"){
+			  			echo '<span itemprop="articleBody" markdown="1">';
+			  		} 
 
-				  		// echo htmlentities($my_html); 
-				  		// show the output html codes without any further processing, use when debug
+			  		// echo htmlentities($my_html); 
+			  		// show the output html codes without any further processing, use when debug
 
-				  		echo $my_html; 
+			  		echo $my_html; 
 
-				  		if($title != "default"){
-				  			echo '</span>';
-				  		} 
-			  		?>
-				</div>
+			  		if($title != "default"){
+			  			echo '</span>';
+			  		} 
+		  		?>
 			</div>
 		</div>
+	</div>
+
   	<?php
   		if($title != "default"){
   			echo '</span>';
@@ -392,8 +494,8 @@
 		// if($title != "default" && $title != "404"){
 		// 	echo '
 		// 		<div class="container">
+	//				<hr>
 		// 			<div class="row">
-		//				<hr>
 		// 				<div class="twelve column" id="comments">
 		// 				<h4><strong>Comments</strong></h4>
 						  
@@ -404,6 +506,14 @@
 		// }
 
 	?>
+	<div class="scrollToTop"><a href="#top">↑TOP</a></div>
+
+	<div class="container">
+		<hr>
+		<div class="row">
+			<div class="twelve column" style="text-align:center;">Thanks for reading. Go back to <a href="#top">↑TOP</a> or see <a href='./mangolb/'>full list of posts</a>.</div>
+		</div>
+	</div>
 
 	<hr>
 	<div class="container">
@@ -496,6 +606,11 @@
 			$(".make-sortable").each(function(){
 				$(this).children().addClass("sortable");
 			});
+		});
+		
+		$("a[href='#top']").click(function() {
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
 		});
 
         $(window).resize(function(){
