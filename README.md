@@ -33,7 +33,7 @@ The directory of this Blog system is like this:
 
 Each articles are formed of a `.txt` file and a folder which has the same name as the `.txt` text file. The folder should contains the essential `cover.jpg`, which is the cover photo of the article, as well as other photos you want to use in your article. Both of them need to be stored under the folder `articles/`. 
 
-I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. `default.txt` and the folder `default/` are for the index page.
+I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. Contents in `articles/default.txt` and the folder `articles/default/` will decide what's displaying on the index page.
 
 ### If you *don't have* access to .htaccess file of your server 
 
@@ -41,7 +41,7 @@ You'll need to use GET method to tell the php script which article you want.
 
 Google "HTTP GET method" or click [here](http://www.w3schools.com/tags/ref_httpmethods.asp) to read more about GET method.
 
-*http://yourdomain.com/mangolb/* will display the contents in `default.txt`
+*http://yourdomain.com/mangolb/* will display the contents in `articles/default.txt`
 
 *http://yourdomain.com/mangolb/?title=YOUR-ARTICLE-TITLE* will display the contents in `YOUR-ARTICLE-TITLE.txt`
 
@@ -85,7 +85,7 @@ Find `index.php`, open it with a code-editor (something like [Sublime Text](http
 
 #### Step 3
 
-Change all the links in `default.txt` as well as other `.txt` files from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
+Change all the links in `default.txt` as well as links in your other articles from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
 
 
 
