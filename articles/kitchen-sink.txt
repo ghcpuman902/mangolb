@@ -13,7 +13,7 @@ Written using [Markdown](http://daringfireball.net/) and [LaTex](http://www.late
 Markdown formatted by [PHP Markdown & Extra](http://michelf.ca/)
 
 [MathType](http://www.dessci.com/en/products/mathtype/) was used to generate LaTeX equations.
-[MathJax](http://www.mathjax.org/) was used to formatting LaTeX equations.
+[MathJax](http://www.mathjax.org/) was used to format LaTeX equations.
 
 [SlabText](http://freqdec.github.io/slabText/) was used to create the beautiful, full-size tittle you see above.
 

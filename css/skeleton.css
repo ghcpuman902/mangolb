@@ -323,12 +323,12 @@ pre > code {
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 table{
-  
+  text-align: right;
 }
 th,
 td {
   padding: 12px 15px;
-  text-align: left;
+  text-align: right;
   border-bottom: 1px solid #E1E1E1; }
 th {
   /*border-top: 1px solid #E1E1E1; */
@@ -342,6 +342,12 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
+tr > th:first-child{
+  text-align: left;
+}
+tr > td:first-child{
+  text-align: left;
+}
 
 
 

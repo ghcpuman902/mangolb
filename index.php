@@ -254,6 +254,20 @@
 			box-sizing: border-box; 
 		}
 
+		.showcase{
+			color: #7F8C8D;
+			outline: solid 1px #aaa;
+			border-top: solid 1px #666;
+			border-bottom: solid 1px #BDC3C7;
+			height: 300px;
+			overflow: scroll;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #ECF0F1;
+
+		}
+
 		/*@SlabText*/
 		/* These styles will only be apply after the javascript. It's different from the .slab class. */
         /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.txt */
@@ -423,28 +437,16 @@
         }
 
         //Display shadow to indicate there's more when scrolling overflowed table.
-		var lastScrollLeft = 0;
 		$(".table-wrapper").each(function(){
-			$(this).scroll(function(event){
-			   var st = $(this).scrollLeft();
-			   if (st == 0){
-			       // rightcroll code
-			       $(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
-					$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
-					$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
-			   } else if (st > lastScrollLeft){
-			       // rightcroll code
-			       $(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.75)");
-					$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.75)");
-					$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.75)");
-			   } else {
-			      // leftscroll code
-			       $(this).css("-webkit-box-shadow", "inset 6px 0px 8px -6px rgba(0,0,0,0.75)");
-					$(this).css("-moz-box-shadow", "inset 6px 0px 8px -6px rgba(0,0,0,0.75)");
-					$(this).css("box-shadow", "inset 6px 0px 8px -6px rgba(0,0,0,0.75)");
-			   }
-			   lastScrollLeft = st;
-			});
+			if ($(this).outerWidth() < $(this).children().first().width()) {
+				$(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+				$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+				$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+			} else {
+				$(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+				$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+				$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+			}
 		});
 
 		//@SlabText
@@ -491,16 +493,26 @@
 					});				
 				});
 			} ,1000);
-			if(title == "default"){
-				// make the article-listing table sortable
-				$("table").addClass("sortable");
-			}
+			$(".make-sortable").each(function(){
+				$(this).children().addClass("sortable");
+			});
 		});
 
         $(window).resize(function(){
 			setTimeout( function(){
 	        $("#cover").height( ($("h1").first().height()+200) );
 			} ,1000);
+			$(".table-wrapper").each(function(){
+				if ($(this).outerWidth() < $(this).children().first().width()) {
+					$(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+					$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+					$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0.5)");
+				} else {
+					$(this).css("-webkit-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+					$(this).css("-moz-box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+					$(this).css("box-shadow", "inset -6px 0px 8px -6px rgba(0,0,0,0)");
+				}
+			});
         });
 
 	</script>

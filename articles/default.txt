@@ -1,6 +1,6 @@
 # MangolB {#default_title}
 
-Hi there! Welcome to my Blog!
+Hi there!
 
 Start modify this blog system to suit your own need by reading [this](./?title=how-to-use-this-blog-system) article.
 
@@ -10,7 +10,7 @@ Start modify this blog system to suit your own need by reading [this](./?title=h
 
 \*Click on table heads to sort table
 
-<div class="table-wrapper" markdown="1">
+<div class="table-wrapper make-sortable" markdown="1">
 |Tittle                                                                                   |Time Written|Last Modified|Type                       |
 |-----------------------------------------------------------------------------------------|------------|-------------|---------------------------|
 |[How to use this blog system](./?title=how-to-use-this-blog-system)                      |04/06/2015  |04/06/2015   |Original/Tutorial/English  |
