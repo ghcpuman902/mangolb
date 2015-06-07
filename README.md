@@ -186,6 +186,9 @@ I'm using [MathType](http://www.dessci.com/en/products/mathtype/) on my Mac to g
 
 ![MathType](./articles/how-to-use-this-blog-system/mathtype.jpg)
 
+##### Step 5: Add the link to default.txt
+
+If you have finished writing and you decided to publish it, you simply add the link of this article to the table in `default.txt`.
 
 ## Things to be careful about
 

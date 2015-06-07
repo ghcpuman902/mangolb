@@ -194,6 +194,10 @@ I'm using [MathType](http://www.dessci.com/en/products/mathtype/) on my Mac to g
 
 ![MathType](./articles/how-to-use-this-blog-system/mathtype.jpg){.middle}
 
+##### Step 5: Add the link to default.txt
+
+If you have finished writing and you decided to publish it, you simply add the link of this article to the table in `default.txt`.
+
 
 ## Things to be careful about
 
@@ -290,4 +294,4 @@ On mobile it will look fine because on mobile all images will be 100% wide, but 
 
 ## THE END
 
-If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on GitHub and make any comments.
+If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on GitHub and make any commits.
