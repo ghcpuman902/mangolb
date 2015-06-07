@@ -125,7 +125,7 @@ Your new `.txt` file should look like this by now :
 
 ### Step 2: Give your article a cover picture
 
-I suggest you use a cover picture that does not have much bright area in it to provide a good contrast for the white title. Especially on IE, when the text-shadow is not supported. The subject of the picture should be at the centre of the image. I'm using `background-size: cover;` in css to control the size of my background image. A good explanation of how it works can be find on [here](http://blog.vjeux.com/2013/image/css-container-and-cover.html).
+I suggest you use a cover picture that does not have much bright area in it to provide a good contrast for the white title. Especially on IE, when the text-shadow is not supported. The subject of the picture should be at the centre of the image. I'm using `background-size: cover;` in css to control the size of my background image. A good explanation of how it works can be found on [here](http://blog.vjeux.com/2013/image/css-container-and-cover.html).
 
 The recommended image size is at least 2000px wide, 1000px high, compress it with things like the "Save for Web" in Photoshop to reduce the size of the file.
 
