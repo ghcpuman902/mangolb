@@ -375,8 +375,6 @@ The 9x9 table you see above, for example, has code :
 ```
 
 
-##### 4.
-
 ## THE END
 
 If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on GitHub and make any commits.

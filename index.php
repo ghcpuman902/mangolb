@@ -325,7 +325,7 @@
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	
 	<!-- Font-awersome see http://fortawesome.github.io/Font-Awesome/ -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
 	
 	<!-- highlight
 		 code highlighting. read more on https://highlightjs.org/ -->
