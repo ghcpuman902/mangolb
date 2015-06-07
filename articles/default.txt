@@ -1,0 +1,37 @@
+# MangolB {#default_title}
+
+Hi there! Welcome to my Blog!
+
+--------------------------------------
+
+### Thanks
+
+**[Markdown](http://daringfireball.net/)** and **[LaTex](http://www.latex-project.org/)** for standardise the syntax I used to write everything.
+
+**[PHP Markdown & Extra](http://michelf.ca/)** for formatting Markdown.
+
+**[MathType](http://www.dessci.com/en/products/mathtype/)** software for generating LaTeX equations, and **[MathJax](http://www.mathjax.org/)** for formatting LaTeX equations.
+
+**[SlabText](http://freqdec.github.io/slabText/)** is generating the beautiful, full-size tittle you see above.
+
+**[highlight](https://highlightjs.org/)** is giving codes colours.
+
+Thanks **[Skeleton](http://getskeleton.com/)** for the beautiful style-sheet.
+
+--------------------------------------
+
+### Posts:
+
+\*Click on table heads to sort table
+
+<div class="table-wrapper" markdown="1">
+|Tittle                                                                                   |Time Written|Last Modified|Type                       |
+|-----------------------------------------------------------------------------------------|------------|-------------|---------------------------|
+|[How to use this blog system](./?title=how-to-use-this-blog-system)                      |04/06/2015  |04/06/2015   |Original/Tutorial/English  |
+|[Kitchen Sink](./?title=kitchen-sink)                                                    |19/05/2015  |19/05/2015   |Demo                       |
+</div>
+
+
+
+
+
