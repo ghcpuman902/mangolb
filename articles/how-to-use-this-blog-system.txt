@@ -238,7 +238,7 @@ So if you do
 \#2...Jack Wilkinson  
 ```
 
-it will becomes:
+it will become normal:
 
 <div class="showcase" markdown="1">
 \#1...Tom Scott   

@@ -353,7 +353,7 @@
 
 		}
 
-		.scrollToTop{
+		#fixed_scrollToTop{
 			height: 40px;
 			width: 80px;
 			background-color: #000;
@@ -364,9 +364,12 @@
 			position: fixed;
 			right: 0;
 			bottom: 0;
+			text-decoration: underline;
+	        cursor:pointer;
 		}
-		.scrollToTop > a{
-			color: #FFF;
+		#fixed_scrollToTop:hover{
+	        cursor:pointer;
+	        color: #2980B9;
 		}
 
 		/*@SlabText*/
@@ -506,12 +509,12 @@
 		// }
 
 	?>
-	<div class="scrollToTop"><a href="#top">↑TOP</a></div>
+	<div class="scrollToTop" id="fixed_scrollToTop">↑TOP</div>
 
 	<div class="container">
 		<hr>
 		<div class="row">
-			<div class="twelve column" style="text-align:center;">Thanks for reading. Go back to <a href="#top">↑TOP</a> or see <a href='./mangolb/'>full list of posts</a>.</div>
+			<div class="twelve column" style="text-align:center;">Thanks for reading. Go back to <a href="#top" class="scrollToTop">↑TOP</a> or see <a href='./mangolb/'>full list of posts</a>.</div>
 		</div>
 	</div>
 
@@ -603,12 +606,10 @@
 					});				
 				});
 			} ,1000);
-			$(".make-sortable").each(function(){
-				$(this).children().addClass("sortable");
-			});
+			$(".make-sortable").children().addClass("sortable");
 		});
 		
-		$("a[href='#top']").click(function() {
+		$(".scrollToTop").click(function() {
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 			return false;
 		});
