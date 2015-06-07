@@ -228,3 +228,8 @@ Oh, and also the tab key. It's for block code. Use spaces instead.
 #### Insert Picture
 
 **This part will not display as expect on GitHub hence it is removed. Download all the files and open *http://YOUR-DOMAIN/mangolb/?title=how-to-use-this-blog-system* to read the full article**
+
+
+## THE END
+
+If you have any questions or problems, please contact me through email: [ghcpuman902@gmail.com](mailto:ghcpuman902@gmail.com). You are also welcomed to folk this on GitHub and make any comments.
