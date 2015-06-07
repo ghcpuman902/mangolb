@@ -396,7 +396,7 @@
         /* Styles for the loading effect */
         .no-js #loader { display: none;  }
 		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-		.se-pre-con {
+		.loader-wrapper {
 			position: fixed;
 			left: 0px;
 			top: 0px;
@@ -448,7 +448,7 @@
 	
 	</head>
 <body>
-	<div class="se-pre-con"></div>
+	<div class="loader-wrapper"></div>
   	<?php
 
   		if($title != "default"){
@@ -539,7 +539,7 @@
 		// Fade out the loading effect when the page is load.
 		$(window).load(function() {
 			// Animate loader off screen
-			$(".se-pre-con").fadeOut("slow");;
+			$(".loader-wrapper").fadeOut("slow");;
 		});
 
         if($("h1").first().text() != "defalut"){
