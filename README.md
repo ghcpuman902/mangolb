@@ -95,25 +95,19 @@ Change all the links in `default.txt` as well as links in your other articles fr
 
 You need have two titles, one is for the name of your `.txt` file, another is your display title.
 
-If your display title is "This is a wonderful story about Apple, Banana & Orange", I suggest you use "this-is-a-wonderful-story-about-apple-banana-and-orange" as the name of your `.txt` file and your folder.
+If your display title is "Apple, Banana & Orange", I suggest you use "apple-banana-and-orange" as the name of your `.txt` file and your folder.
 
 Create a folder and a `.txt` file with the name you just decided, put both of them under `articles/`.
 
 ```diff
 | + articles/
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange/
+|   | + apple-banana-and-orange/
 |   |   | + cover.jpg
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.txt
 ```
 You can ignore the `cover.jpg` by now.
 
-Now open your 
-
-```diff
-this-is-a-wonderful-story-about-apple-banana-and-orange.txt
-``` 
-
-or what ever you've named it.
+Now open your `apple-banana-and-orange.txt`  or what ever you've named it.
 
 Specific your display title by putting a `# YOUR TITLE` at the beginning of your `.txt` file. Each article has to have one and only one \# title (`<h1>` title).
 
