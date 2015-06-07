@@ -117,10 +117,10 @@ SlabText will split headlines into rows before resizing each row to fill the ava
 
 Your new `.txt` file should look like this by now :
 
-*articles/this-is-a-wonderful-story-about-apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.txt:*
 
 ```diff
-# This is a wonderful story about Apple, Banana & Orange
+# Apple, Banana & Orange
 ```
 
 ### Step 2: Give your article a cover picture
@@ -133,9 +133,9 @@ Save it as `cover.jpg` under the folder.
 
 ```diff
 | + articles/
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange/
+|   | + apple-banana-and-orange/
 |   |   | + cover.jpg       <-SAVE IT HERE
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.txt
 ```
 
 ### Step 3: Provide the author name and date written
@@ -157,10 +157,10 @@ You can also add extra information about the article behind these two.
 
 Your new `.txt` file should look like something like this by now :
 
-*articles/this-is-a-wonderful-story-about-apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.txt:*
 
 ```diff
-# This is a wonderful story about Apple, Banana & Orange
+# Apple, Banana & Orange
 
 **Author:** [MangleKuo](#){#author .itemprop} **Date Written:** [2015-05-29](#){#datePublished .itemprop} **LAST UNDATE** 2015-06-13 **Type:** Article
 
