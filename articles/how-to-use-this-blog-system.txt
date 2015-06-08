@@ -37,7 +37,7 @@ The directory of this Blog system is like this:
 
 Each articles are formed of a `.txt` file and a folder which has the same name as the `.txt` text file. The folder should contains the essential `cover.jpg`, which is the cover photo of the article, as well as other photos you want to use in your article. Both of them need to be stored under the folder `articles/`. 
 
-I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. `default.txt` and the folder `default/` are for the index page.
+I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. Contents in `articles/default.txt` and the folder `articles/default/` will decide what's displaying on the index page.
 
 ### If you *don't have* access to .htaccess file of your server 
 
@@ -45,7 +45,7 @@ You'll need to use GET method to tell the php script which article you want.
 
 Google "HTTP GET method" or click [here](http://www.w3schools.com/tags/ref_httpmethods.asp) to read more about GET method.
 
-*http://yourdomain.com/mangolb/* will display the contents in `default.txt`
+*http://yourdomain.com/mangolb/* will display the contents in `articles/default.txt`
 
 *http://yourdomain.com/mangolb/?title=YOUR-ARTICLE-TITLE* will display the contents in `YOUR-ARTICLE-TITLE.txt`
 
@@ -89,7 +89,7 @@ Find `index.php`, open it with a code-editor (something like [Sublime Text](http
 
 #### Step 3
 
-Change all the links in `default.txt` as well as other `.txt` files from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
+Change all the links in `default.txt` as well as links in your other articles from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
 
 
 
@@ -99,25 +99,19 @@ Change all the links in `default.txt` as well as other `.txt` files from "./?tit
 
 You need have two titles, one is for the name of your `.txt` file, another is your display title.
 
-If your display title is "This is a wonderful story about Apple, Banana & Orange", I suggest you use "this-is-a-wonderful-story-about-apple-banana-and-orange" as the name of your `.txt` file and your folder.
+If your display title is "Apple, Banana & Orange", I suggest you use "apple-banana-and-orange" as the name of your `.txt` file and your folder.
 
 Create a folder and a `.txt` file with the name you just decided, put both of them under `articles/`.
 
 ```diff
 | + articles/
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange/
+|   | + apple-banana-and-orange/
 |   |   | + cover.jpg
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.txt
 ```
 You can ignore the `cover.jpg` by now.
 
-Now open your 
-
-```diff
-this-is-a-wonderful-story-about-apple-banana-and-orange.txt
-``` 
-
-or what ever you've named it.
+Now open your `apple-banana-and-orange.txt`  or what ever you've named it.
 
 Specific your display title by putting a `# YOUR TITLE` at the beginning of your `.txt` file. Each article has to have one and only one \# title (`<h1>` title).
 
@@ -127,15 +121,15 @@ SlabText will split headlines into rows before resizing each row to fill the ava
 
 Your new `.txt` file should look like this by now :
 
-*articles/this-is-a-wonderful-story-about-apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.txt:*
 
 ```diff
-# This is a wonderful story about Apple, Banana & Orange
+# Apple, Banana & Orange
 ```
 
 ### Step 2: Give your article a cover picture
 
-I suggest you use a cover picture that does not have much bright area in it to provide a good contrast for the white title. Especially on IE, when the text-shadow is not supported. The subject of the picture should be at the centre of the image. I'm using `background-size: cover;` in css to control the size of my background image. A good explanation of how it works can be find on [here](http://blog.vjeux.com/2013/image/css-container-and-cover.html).
+I suggest you use a cover picture that does not have much bright area in it to provide a good contrast for the white title. Especially on IE, when the text-shadow is not supported. The subject of the picture should be at the centre of the image. I'm using `background-size: cover;` in css to control the size of my background image. A good explanation of how it works can be found on [here](http://blog.vjeux.com/2013/image/css-container-and-cover.html).
 
 The recommended image size is at least 2000px wide, 1000px high, compress it with things like the "Save for Web" in Photoshop to reduce the size of the file.
 
@@ -143,9 +137,9 @@ Save it as `cover.jpg` under the folder.
 
 ```diff
 | + articles/
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange/
+|   | + apple-banana-and-orange/
 |   |   | + cover.jpg       <-SAVE IT HERE
-|   | + this-is-a-wonderful-story-about-apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.txt
 ```
 
 ### Step 3: Provide the author name and date written
@@ -167,10 +161,10 @@ You can also add extra information about the article behind these two.
 
 Your new `.txt` file should look like something like this by now :
 
-*articles/this-is-a-wonderful-story-about-apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.txt:*
 
 ```diff
-# This is a wonderful story about Apple, Banana & Orange
+# Apple, Banana & Orange
 
 **Author:** [MangleKuo](#){#author .itemprop} **Date Written:** [2015-05-29](#){#datePublished .itemprop} **LAST UNDATE** 2015-06-13 **Type:** Article
 
@@ -238,7 +232,7 @@ So if you do
 \#2...Jack Wilkinson  
 ```
 
-it will become normal:
+it will becomes:
 
 <div class="showcase" markdown="1">
 \#1...Tom Scott   
@@ -315,7 +309,7 @@ Here are some more text which has nothing to do with the blue box.
 
 is not what you want to see is it? 
 
-On mobile it will look fine because on mobile all images will be 100% wide, but on desktop or larger screens the title of next section will appear at the right of the image. Keep this in mind and be careful when putting images as float left or right. Use Photoshop to add white margin at the left and right side of the image and use `.middle` instead when necessary. 
+On mobile it will look fine because on mobile all images will be 100% wide, but on desktop or larger screens the title of next section will appear at the right of the image. Keep this in mind and be careful when putting images as float left. You should experience less problem with float right.. but you still will. Use Photoshop to add white margin at the left and right side of the image and use `.middle` instead when necessary. 
 
 ### Long things
 
