@@ -315,7 +315,7 @@ On mobile it will look fine because on mobile all images will be 100% wide, but 
 
 These things won't fold on small screen hence it is better to keep their length short or use other way of displaying them instead.
 
-##### 1. Long inline codes
+#### 1. Long inline codes
 e.g. `this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.txt`
 
 Solution: use multiple line block codes instead:  
@@ -323,14 +323,14 @@ Solution: use multiple line block codes instead:
 this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.txt
 ```
 
-##### 2. Long links 
+#### 2. Long links 
 e.g. [http://3.141592653589793238462643383279502884197169399375105820974944592.com](http://3.141592653589793238462643383279502884197169399375105820974944592.com)
 
 Solution: Don't use the full URL as the name of the link
 
 [Pi to One Million Digits](http://3.141592653589793238462643383279502884197169399375105820974944592.com/)
 
-##### 3. Tables 
+#### 3. Tables 
 
 Unless your table is really really really tiny like this one:
 |x|1|2|
