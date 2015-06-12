@@ -54,9 +54,9 @@
 	<link rel="icon" type="image/png" href="images/favicon.png?v=1">
 	<?php
 		// Use the php class to format Markdown (change from plain text to HTML)
-		if(file_exists("./articles/".$title.'.txt') === true){
-			$myfile = fopen("./articles/".$title.'.txt', "r") or die("Unable to open file!");
-			$my_text = fread($myfile,filesize("./articles/".$title.'.txt'));
+		if(file_exists("./articles/".$title.'.md') === true){
+			$myfile = fopen("./articles/".$title.'.md', "r") or die("Unable to open file!");
+			$my_text = fread($myfile,filesize("./articles/".$title.'.md'));
 			fclose($myfile);
 			include_once "phpmarkdown/markdown.php";
 			$my_html = Markdown($my_text);
@@ -254,7 +254,7 @@
             'Lantinghei TC', 'Hiragino Kaku Gothic Pro', 微軟正黑體, 'STHeiti Light', 'Microsoft JhengHei', 'Heiti TC';
 
             /*@SlabText*/
-            /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.txt */
+            /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.md */
             text-align:left;
             text-transform: uppercase;
             line-height:1;
@@ -287,7 +287,7 @@
             'Lantinghei TC', 'Hiragino Kaku Gothic Pro', 微軟正黑體, 'STHeiti Light', 'Microsoft JhengHei', 'Heiti TC';
 
             /*@SlabText*/
-            /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.txt */
+            /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.md */
             text-align:left;
             text-transform: uppercase;
             line-height:1;
@@ -381,7 +381,7 @@
 
 		/*@SlabText*/
 		/* These styles will only be apply after the javascript. It's different from the .slab class. */
-        /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.txt */
+        /* These styles are for slabText. Read more in the articles/how-to-use-this-blog-system.md */
         .slabtexted .slabtext
         {
 	        display:-moz-inline-box;

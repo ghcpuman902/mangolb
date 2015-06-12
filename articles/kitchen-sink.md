@@ -4,7 +4,7 @@
 
 -----------------------------
 
-Everything you see here are originally just plain texts. Click [here](./articles/hello.txt) to see the original text file before formatting
+Everything you see here are originally just plain texts. Click [here](./articles/hello.md) to see the original text file before formatting
 
 -----------------------------
 

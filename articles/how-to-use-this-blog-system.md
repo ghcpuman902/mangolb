@@ -25,19 +25,19 @@ The directory of this Blog system is like this:
 |	|   | + default/
 |	|   |   | + cover.jpg
 |	|   |   | + img1.jpg
-|	|   | + default.txt
+|	|   | + default.md
 |	|   | - article-1/
-|	|   | + article-1.txt
+|	|   | + article-1.md
 |	|   | - article-2/
-|	|   | + article-2.txt
+|	|   | + article-2.md
 |	| - css/
 |	| - js/
 |	| - images/
 ```
 
-Each articles are formed of a `.txt` file and a folder which has the same name as the `.txt` text file. The folder should contains the essential `cover.jpg`, which is the cover photo of the article, as well as other photos you want to use in your article. Both of them need to be stored under the folder `articles/`. 
+Each articles are formed of a `.md` file and a folder which has the same name as the `.md` text file. The folder should contains the essential `cover.jpg`, which is the cover photo of the article, as well as other photos you want to use in your article. Both of them need to be stored under the folder `articles/`. 
 
-I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.txt`. Contents in `articles/default.txt` and the folder `articles/default/` will decide what's displaying on the index page.
+I suggest you not to delete any of the articles (including this one and the kitchen sink) before you start using the system. If you don't want these to show up on your blog index page, all you need to do is change the table in `default.md`. Contents in `articles/default.md` and the folder `articles/default/` will decide what's displaying on the index page.
 
 ### If you *don't have* access to .htaccess file of your server 
 
@@ -45,9 +45,9 @@ You'll need to use GET method to tell the php script which article you want.
 
 Google "HTTP GET method" or click [here](http://www.w3schools.com/tags/ref_httpmethods.asp) to read more about GET method.
 
-*http://yourdomain.com/mangolb/* will display the contents in `articles/default.txt`
+*http://yourdomain.com/mangolb/* will display the contents in `articles/default.md`
 
-*http://yourdomain.com/mangolb/?title=YOUR-ARTICLE-TITLE* will display the contents in `YOUR-ARTICLE-TITLE.txt`
+*http://yourdomain.com/mangolb/?title=YOUR-ARTICLE-TITLE* will display the contents in `YOUR-ARTICLE-TITLE.md`
 
 Hence *http://yourdomain.com/mangolb/* is the same as *http://yourdomain.com/mangolb/?title=default*
 
@@ -89,7 +89,7 @@ Find `index.php`, open it with a code-editor (something like [Sublime Text](http
 
 #### Step 3
 
-Change all the links in `default.txt` as well as links in your other articles from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
+Change all the links in `default.md` as well as links in your other articles from "./?title=YOUR-ARTICLE-TITLE" into  "./YOUR-ARTICLE-TITLE".
 
 
 
@@ -97,31 +97,31 @@ Change all the links in `default.txt` as well as links in your other articles fr
 
 ### Step 1: Give your new article a name
 
-You need have two titles, one is for the name of your `.txt` file, another is your display title.
+You need have two titles, one is for the name of your `.md` file, another is your display title.
 
-If your display title is "Apple, Banana & Orange", I suggest you use "apple-banana-and-orange" as the name of your `.txt` file and your folder.
+If your display title is "Apple, Banana & Orange", I suggest you use "apple-banana-and-orange" as the name of your `.md` file and your folder.
 
-Create a folder and a `.txt` file with the name you just decided, put both of them under `articles/`.
+Create a folder and a `.md` file with the name you just decided, put both of them under `articles/`.
 
 ```diff
 | + articles/
 |   | + apple-banana-and-orange/
 |   |   | + cover.jpg
-|   | + apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.md
 ```
 You can ignore the `cover.jpg` by now.
 
-Now open your `apple-banana-and-orange.txt`  or what ever you've named it.
+Now open your `apple-banana-and-orange.md`  or what ever you've named it.
 
-Specific your display title by putting a `# YOUR TITLE` at the beginning of your `.txt` file. Each article has to have one and only one \# title (`<h1>` title).
+Specific your display title by putting a `# YOUR TITLE` at the beginning of your `.md` file. Each article has to have one and only one \# title (`<h1>` title).
 
 Javascript is used to apply SlabText to it, and move it into the cover section. Search "@SlabText" and "@PutH1IntoCover" in `index.php` to see the codes corresponding to it.
 
 SlabText will split headlines into rows before resizing each row to fill the available horizontal space. In this case, the headline is our `<h1>` title.
 
-Your new `.txt` file should look like this by now :
+Your new `.md` file should look like this by now :
 
-*articles/apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.md:*
 
 ```diff
 # Apple, Banana & Orange
@@ -139,7 +139,7 @@ Save it as `cover.jpg` under the folder.
 | + articles/
 |   | + apple-banana-and-orange/
 |   |   | + cover.jpg       <-SAVE IT HERE
-|   | + apple-banana-and-orange.txt
+|   | + apple-banana-and-orange.md
 ```
 
 ### Step 3: Provide the author name and date written
@@ -159,9 +159,9 @@ You can find the corresponding code by searching "@itemprop" in `index.php`.
 
 You can also add extra information about the article behind these two.
 
-Your new `.txt` file should look like something like this by now :
+Your new `.md` file should look like something like this by now :
 
-*articles/apple-banana-and-orange.txt:*
+*articles/apple-banana-and-orange.md:*
 
 ```diff
 # Apple, Banana & Orange
@@ -194,9 +194,9 @@ I'm using [MathType](http://www.dessci.com/en/products/mathtype/) on my Mac to g
 
 ![MathType](./articles/how-to-use-this-blog-system/mathtype.jpg){.middle}
 
-### Step 5: Add the link to default.txt
+### Step 5: Add the link to default.md
 
-If you have finished writing and you decided to publish it, you simply add the link of this article to the table in `default.txt`.
+If you have finished writing and you decided to publish it, you simply add the link of this article to the table in `default.md`.
 
 
 ## Things to be careful about
@@ -316,11 +316,11 @@ On mobile it will look fine because on mobile all images will be 100% wide, but 
 These things won't fold on small screen hence it is better to keep their length short or use other way of displaying them instead.
 
 #### 1. Long inline codes
-e.g. `this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.txt`
+e.g. `this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.md`
 
 Solution: use multiple line block codes instead:  
 ```diff
-this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.txt
+this-is-really-really-long-inline-code-block-which-is-going-to-be-too-wide-on-small-screen.md
 ```
 
 #### 2. Long links 
