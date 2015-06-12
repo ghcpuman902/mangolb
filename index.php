@@ -95,7 +95,7 @@
 		h2{
 			background-color: #F6F6F6;
 			margin-top: 1.25em;
-			font-weight: 800
+			font-weight: 800;
 		}
 		h2:after{
 			content: " ";
