@@ -101,7 +101,7 @@
 			content: " ";
 			display: block;
 			position: relative;
-			left: 100%;
+			left: -1%;
 			top: 50%;
 			width: 4px;
 			height: 1.25em;
@@ -118,9 +118,9 @@
 			content: " ";
 			display: block;
 			position: relative;
-			left: 100%;
+			left: -1%;
 			top: 50%;
-			width: 4px;
+			width: 10px;
 			height: 1.3em;
 			margin-left: -4px;
 			margin-top: -1.3em;
@@ -135,9 +135,9 @@
 			content: " ";
 			display: block;
 			position: relative;
-			left: 100%;
+			left: -1%;
 			top: 50%;
-			width: 4px;
+			width: 8px;
 			height: 1.35em;
 			margin-left: -4px;
 			margin-top: -1.35em;
@@ -152,9 +152,9 @@
 			content: " ";
 			display: block;
 			position: relative;
-			left: 100%;
+			left: -1%;
 			top: 50%;
-			width: 4px;
+			width: 6px;
 			height: 1.5em;
 			margin-left: -4px;
 			margin-top: -1.5em;
@@ -169,7 +169,7 @@
 			content: " ";
 			display: block;
 			position: relative;
-			left: 100%;
+			left: -1%;
 			top: 50%;
 			width: 4px;
 			height: 1.6em;
